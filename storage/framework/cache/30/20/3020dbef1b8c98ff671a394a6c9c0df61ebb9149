@@ -1,0 +1,105 @@
+1596960380a:1:{s:22:"services/expertise.htm";a:9:{s:8:"fileName";s:22:"services/expertise.htm";s:7:"content";s:2150:"title = "Geological expertice"
+url = "/services/expertise"
+layout = "default"
+is_active = "services"
+==
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    <!--Search Popup-->
+    {% partial 'search_popup' %}
+
+    <!--Page Banner-->
+    <section class="event-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-7.jpg'|theme }});"></div>
+
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ 'Geological Expertise'|_ }}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Events Section-->
+    <section class="event-details-section">
+        <div class="auto-container">
+            <div class="event-details">
+                <div class="row clearfix">
+                    <!--Content Column-->
+                    <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                        <div class="content-inner">
+                            <div class="main-image">
+                                <figure class="image"><img src="{{ 'assets/images/resource/featured-image-27.jpg'|theme }}" alt=""></figure>
+                            </div>
+
+                            <div class="text-block">
+                                <h2>Overview</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% partial 'sidebar_services' %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:5:"mtime";i:1596911620;s:6:"markup";s:2039:"<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    <!--Search Popup-->
+    {% partial 'search_popup' %}
+
+    <!--Page Banner-->
+    <section class="event-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-7.jpg'|theme }});"></div>
+
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ 'Geological Expertise'|_ }}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Events Section-->
+    <section class="event-details-section">
+        <div class="auto-container">
+            <div class="event-details">
+                <div class="row clearfix">
+                    <!--Content Column-->
+                    <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                        <div class="content-inner">
+                            <div class="main-image">
+                                <figure class="image"><img src="{{ 'assets/images/resource/featured-image-27.jpg'|theme }}" alt=""></figure>
+                            </div>
+
+                            <div class="text-block">
+                                <h2>Overview</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% partial 'sidebar_services' %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:4:"code";N;s:5:"title";s:20:"Geological expertice";s:3:"url";s:19:"/services/expertise";s:6:"layout";s:7:"default";s:9:"is_active";s:8:"services";}}

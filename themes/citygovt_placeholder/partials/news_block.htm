@@ -1,0 +1,66 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "Blog1"
+postsPerPage = 3
+noPostsMessage = "No posts found!"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "news"
+==
+{% set posts = blogPosts.posts %}
+
+<!--News Section-->
+<section class="news-section">
+
+
+    <div class="auto-container">
+        <div class="sec-title with-separator">
+            <h2>Latest Press Releases</h2>
+            <div class="separator"><span class="cir c-1"></span><span class="cir c-2"></span><span class="cir c-3"></span></div>
+        </div>
+
+
+        <div class="carousel-box">
+            <div class="news-carousel owl-theme owl-carousel">
+                {% for post in posts %}
+                <!--News Block-->
+                <div class="news-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image">
+                                {% for image in post.featured_images|slice(0, 1) %}
+                                <img src="{{ image.path }}" alt="{{ post.title }}">
+                                {% endfor %}
+                            </figure>
+                            <div class="hover-box">
+                                <div class="link zoom-link">
+                                    <a href="{{ 'assets/images/resource/blog-image-1.jpg'|theme }}" class="lightbox-image"><span class="icon flaticon-zoom-in"></span></a>
+                                </div>
+                                <div class="link single-link">
+                                    <a href="{{ post.url }}"><span class="icon flaticon-link-4"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                            <div class="upper-info">
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                <div class="cat-info"><a href="#"><span class="fa fa-folder"></span>Community Life</a></div>
+                            </div>
+                            <div class="meta-info clearfix">
+                                <div class="author-info clearfix">
+                                    <div class="author-icon"><span class="flaticon-user-3"></span></div>
+                                    <div class="author-title">By Julie Gordon</div>
+                                    <div class="date">{{ post.published_at }}</div>
+                                </div>
+                                <div class="comments-info">
+                                    <a href="#"><span class="fa fa-comment"></span> 02</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

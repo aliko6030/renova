@@ -1,0 +1,35 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ this.page.title }}</title>
+        <!-- Stylesheets -->
+        <link href="{{ 'assets/css/bootstrap.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/scrollbar.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+
+        <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="assets/js/respond.js"></script><![endif]-->
+        {% styles %}
+    </head>
+
+    <body>
+        {% page %}
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery.nav.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery.scrollTo.js'|theme }}"></script>
+        <script src="{{ 'assets/js/scrollbar.js'|theme }}"></script>
+        <script src="{{ 'assets/js/script.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+    </body>
+</html>

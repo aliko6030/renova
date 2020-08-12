@@ -1,0 +1,21 @@
+==
+
+<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget cat-widget">
+            <div class="widget-content">
+                <div class="title"><h4>{{ 'Our Services'|_ }}</h4></div>
+                <ul class="cat-links clearfix">
+                    <li class="{% if this.page.id == 'services-dmaa' %} current {% endif %}"><a href="{{ 'services/dmaa'|page }}">{{ 'DMAA'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'services-dmiip' %} current {% endif %}"><a href="{{ 'services/dmiip'|page }}">{{ 'DMİİP'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'services-expertise' %} current {% endif %}"><a href="{{ 'services/expertise'|page }}">{{ 'Geological Expertise'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'services-monitoring' %} current {% endif %}"><a href="{{ 'services/monitoring'|page }}">{{ 'Monitoring'|_ }}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        {% partial 'subscribe_us' %}
+
+    </aside>
+</div>

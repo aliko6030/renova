@@ -1,0 +1,207 @@
+1596960379a:1:{s:13:"blog/blog.htm";a:11:{s:8:"fileName";s:13:"blog/blog.htm";s:7:"content";s:4863:"title = "All news"
+url = "/blog"
+layout = "default"
+is_hidden = 0
+is_active = "blog"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 6
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/blog"
+postPage = "blog/blog_post"
+==
+{% set posts = blogPosts.posts %}
+{% set categories = blogCategories.categories %}
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    {% partial 'search_popup' %}
+
+    <!--Page Title-->
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-5.jpg'|theme }});"></div>
+
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ 'All News'|_ }}</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{{ 'home'|page }}">{{ 'Home'|_ }}</a></li>
+                            <li class="active">{{ 'All news'|_ }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-inner">
+                        <div class="events-list">
+                            <!--Event Block-->
+                            {% for post in posts %}
+                            {% for category in post.categories %}
+                            <div class="event-block">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="date-box"><div class="date"><span class="day">{{ post.published_at|date('d') }}</span><span class="month">{{ post.published_at|date('M') }}</span></div></div>
+                                        <div class="content">
+                                            <div class="cat-info"><a href="#">{{ category.name }}</a></div>
+                                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                            <div class="location">{{ post.excerpt }}</div>
+                                            <div class="read-more"><a href="{{ post.url }}">{{ 'Read More'|_ }}</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% endfor %}
+                        </div>
+
+                        <!--Pagination-->
+                        <div class="pagination-box text-right">
+                            <ul class="styled-pagination">
+                                <li class="prev"><a href="#"><span class="icon flaticon-arrows-1"></span> {{ 'Prev'|_ }}</a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="next"><a href="#">{{ 'Next'|_ }} <span class="icon flaticon-right-2"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="bg-layer">
+                            <div class="image-layer" style="background-image:url({{ 'assets/images/background/sidebar-bg-image.jpg'|theme }});"></div>
+                        </div>
+
+                        <div class="sidebar-widget services-widget">
+                            <div class="widget-content">
+                                <ul class="links clearfix">
+                                    <li><a href="#"> <span class="ttl">{{ 'News'|_ }}</span></a></li>
+                                    <li><a href="#"> <span class="ttl">{{ 'Articles'|_ }}</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {% partial 'subscribe_us' %}
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:5:"mtime";i:1596911285;s:6:"markup";s:4583:"{% set posts = blogPosts.posts %}
+{% set categories = blogCategories.categories %}
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    {% partial 'search_popup' %}
+
+    <!--Page Title-->
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-5.jpg'|theme }});"></div>
+
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ 'All News'|_ }}</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{{ 'home'|page }}">{{ 'Home'|_ }}</a></li>
+                            <li class="active">{{ 'All news'|_ }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-inner">
+                        <div class="events-list">
+                            <!--Event Block-->
+                            {% for post in posts %}
+                            {% for category in post.categories %}
+                            <div class="event-block">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="date-box"><div class="date"><span class="day">{{ post.published_at|date('d') }}</span><span class="month">{{ post.published_at|date('M') }}</span></div></div>
+                                        <div class="content">
+                                            <div class="cat-info"><a href="#">{{ category.name }}</a></div>
+                                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                            <div class="location">{{ post.excerpt }}</div>
+                                            <div class="read-more"><a href="{{ post.url }}">{{ 'Read More'|_ }}</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% endfor %}
+                        </div>
+
+                        <!--Pagination-->
+                        <div class="pagination-box text-right">
+                            <ul class="styled-pagination">
+                                <li class="prev"><a href="#"><span class="icon flaticon-arrows-1"></span> {{ 'Prev'|_ }}</a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="next"><a href="#">{{ 'Next'|_ }} <span class="icon flaticon-right-2"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="bg-layer">
+                            <div class="image-layer" style="background-image:url({{ 'assets/images/background/sidebar-bg-image.jpg'|theme }});"></div>
+                        </div>
+
+                        <div class="sidebar-widget services-widget">
+                            <div class="widget-content">
+                                <ul class="links clearfix">
+                                    <li><a href="#"> <span class="ttl">{{ 'News'|_ }}</span></a></li>
+                                    <li><a href="#"> <span class="ttl">{{ 'Articles'|_ }}</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {% partial 'subscribe_us' %}
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:4:"code";N;s:5:"title";s:8:"All news";s:3:"url";s:5:"/blog";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"is_active";s:4:"blog";s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:1:"6";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:9:"blog/blog";s:8:"postPage";s:14:"blog/blog_post";}}}

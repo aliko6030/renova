@@ -1,0 +1,60 @@
+description = "Default layout"
+[localePicker]
+forceUrl = 1
+==
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>City Government - City Regulatory HTML Template | Home Page 01</title>
+        <!-- Stylesheets -->
+        <link href="{{ 'assets/css/bootstrap.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+        <!-- Responsive File -->
+        <link href="{{ 'assets/css/responsive.css'|theme }}" rel="stylesheet">
+
+        <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/x-icon">
+        <link rel="icon" href="{{ 'assets/images/favicon.png'|theme }}" type="image/x-icon">
+
+
+        <!-- Responsive Settings -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="{{ 'assets/js/respond.js'|theme }}"></script><![endif]-->
+
+        {% styles %}
+
+
+    </head>
+
+        <body>
+        {% partial 'header' %}
+
+        <div class="page">
+            {% page %}
+        </div>
+
+        {% partial 'footer' %}
+
+
+        <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/js/popper.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery-ui.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery.fancybox.js'|theme }}"></script>
+        <script src="{{ 'assets/js/owl.js'|theme }}"></script>
+        <script src="{{ 'assets/js/scrollbar.js'|theme }}"></script>
+        <script src="{{ 'assets/js/appear.js'|theme }}"></script>
+        <script src="{{ 'assets/js/validate.js'|theme }}"></script>
+        <script src="{{ 'assets/js/wow.js'|theme }}"></script>
+        <script src="{{ 'assets/js/custom-script.js'|theme }}"></script>
+        {% framework %}
+        {% framework extras %}
+        {% scripts %}
+
+        <!--Google Map-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJe2MPH8B-gLzZu5QI0Alc73nvkLuuqQ"></script>
+        <script src="{{ 'assets/js/map-script.js'|theme }}"></script>
+    </body>
+</html>

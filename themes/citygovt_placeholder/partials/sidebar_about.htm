@@ -1,0 +1,21 @@
+==
+
+<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget cat-widget">
+            <div class="widget-content">
+                <div class="title"><h4>{{ 'About us'|_ }}</h4></div>
+                <ul class="cat-links clearfix">
+                    <li class="{% if this.page.id == 'about-our_aims' %} current {% endif %}"><a href="{{ 'about/our_aims'|page }}">{{ 'Our Aims'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'about-personnel' %} current {% endif %}"><a href="{{ 'about/personnel'|page }}">{{ 'Personnel'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'about-structure' %} current {% endif %}"><a href="{{ 'about/structure'|page }}">{{ 'Structure'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'about-relations' %} current {% endif %}"><a href="{{ 'about/relations'|page }}">{{ 'International Relations'|_ }}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        {% partial 'subscribe_us' %}
+
+    </aside>
+</div>

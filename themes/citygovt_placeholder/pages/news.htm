@@ -1,0 +1,23 @@
+title = "News"
+url = "/news/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+==
+
+<section class="about-section">
+    <div class="pattern-layer" style="background-image: url({{ 'assets/images/background/pattern-1.png'|theme }});"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <div class="content">
+                <div class="sec-title light">
+                    <h2>{{ post.title }}</h2>
+                </div>
+                <div class="upper-text clearfix">{{ post.content_html|raw }}</div>
+            </div>
+        </div>
+    </div>
+</section>

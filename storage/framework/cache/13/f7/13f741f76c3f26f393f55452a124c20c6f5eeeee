@@ -1,0 +1,59 @@
+1596960380a:1:{s:16:"search_popup.htm";a:6:{s:8:"fileName";s:16:"search_popup.htm";s:7:"content";s:1107:"==
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+    <div class="close-search theme-btn"><span class="flaticon-targeting-cross"></span></div>
+    <div class="popup-inner">
+        <div class="overlay-layer"></div>
+        <div class="search-form">
+            <form method="post" action="index.html">
+                <div class="form-group">
+                    <fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+
+            <br>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Idea</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Growth</a></li>
+                <li><a href="#">Plan</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>";s:5:"mtime";i:1596899670;s:6:"markup";s:1101:"<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+    <div class="close-search theme-btn"><span class="flaticon-targeting-cross"></span></div>
+    <div class="popup-inner">
+        <div class="overlay-layer"></div>
+        <div class="search-form">
+            <form method="post" action="index.html">
+                <div class="form-group">
+                    <fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+
+            <br>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Idea</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Growth</a></li>
+                <li><a href="#">Plan</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

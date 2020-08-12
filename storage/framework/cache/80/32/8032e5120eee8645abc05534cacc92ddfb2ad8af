@@ -1,0 +1,37 @@
+1596917031a:1:{s:23:"sidebar_legislative.htm";a:6:{s:8:"fileName";s:23:"sidebar_legislative.htm";s:7:"content";s:982:"==
+
+<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget cat-widget">
+            <div class="widget-content">
+                <div class="title"><h4>{{ 'Legislative Base'|_ }}</h4></div>
+                <ul class="cat-links clearfix">
+                    <li class="{% if this.page.id == 'legislative-laws' %} current {% endif %}"><a href="{{ 'legislative/laws'|page }}">{{ 'Laws'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'legislative-decrees' %} current {% endif %}"><a href="{{ 'legislative/decrees'|page }}">{{ 'Decrees'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'legislative-decisions' %} current {% endif %}"><a href="{{ 'legislative/decisions'|page }}">{{ 'Decisions'|_ }}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        {% partial 'subscribe_us' %}
+
+    </aside>
+</div>";s:5:"mtime";i:1596911416;s:6:"markup";s:976:"<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget cat-widget">
+            <div class="widget-content">
+                <div class="title"><h4>{{ 'Legislative Base'|_ }}</h4></div>
+                <ul class="cat-links clearfix">
+                    <li class="{% if this.page.id == 'legislative-laws' %} current {% endif %}"><a href="{{ 'legislative/laws'|page }}">{{ 'Laws'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'legislative-decrees' %} current {% endif %}"><a href="{{ 'legislative/decrees'|page }}">{{ 'Decrees'|_ }}</a></li>
+                    <li class="{% if this.page.id == 'legislative-decisions' %} current {% endif %}"><a href="{{ 'legislative/decisions'|page }}">{{ 'Decisions'|_ }}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        {% partial 'subscribe_us' %}
+
+    </aside>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

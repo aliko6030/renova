@@ -1,0 +1,23 @@
+1596960735a:1:{s:18:"sidebar_offers.htm";a:6:{s:8:"fileName";s:18:"sidebar_offers.htm";s:7:"content";s:273:"==
+
+<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget contact-widget">
+
+            {% partial 'subscribe_us' %}
+
+        </div>
+
+    </aside>
+</div>";s:5:"mtime";i:1596903259;s:6:"markup";s:267:"<!--Sidebar Side-->
+<div class="sidebar-side info-column col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar info-inner">
+        <div class="sidebar-widget contact-widget">
+
+            {% partial 'subscribe_us' %}
+
+        </div>
+
+    </aside>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

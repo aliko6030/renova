@@ -1,0 +1,238 @@
+1596960379a:1:{s:18:"blog/blog_post.htm";a:11:{s:8:"fileName";s:18:"blog/blog_post.htm";s:7:"content";s:6012:"title = "Blog post"
+url = "/:slug"
+layout = "default"
+is_hidden = 0
+is_active = "blog"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/blog"
+==
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    <!--Search Popup-->
+    {% partial 'search_popup' %}
+
+    <!--Page Title-->
+
+    <section class="blog-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-6.jpg'|theme }});"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ post.title }}</h1>
+                    <div class="other-info clearfix">
+                        <div class="date"><span>{{ post.published_at|date('d')}}.{{ post.published_at|date('m')}}.{{ post.published_at|date('Y')}}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-inner">
+                        <div class="single-post">
+                            <div class="post-details">
+                                <!--<div class="main-image-box">
+                                    <figure class="image"><img src="{{ 'assets/images/resource/blog-image-20.jpg'|theme }}" alt=""></figure>
+                                </div>
+                                -->
+                                <p>{{ post.content_html|raw}}</p>
+                            </div>
+
+                            <div class="post-controls">
+                                <div class="inner clearfix">
+                                    <div class="prev-post">
+                                        <a href="#">
+                                            <span class="icon flaticon-back"></span>
+                                            <span class="txt">Digital Payments Promotion <br>Awareness Program</span>
+                                        </a>
+                                    </div>
+                                    <div class="next-post">
+                                        <a href="#">
+                                            <span class="icon flaticon-next"></span>
+                                            <span class="txt">World Environment Solid Waste <br>Lecture Series</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="related-posts">
+                                <div class="group-title">
+                                    <h2>Related Post</h2>
+                                </div>
+                                <div class="row clearfix">
+                                    <!--News Block-->
+
+                                    <div class="news-block-five col-md-6 col-sm-12">
+                                        <div class="inner-box">
+                                            <div class="image-box">
+                                                <figure class="image"><img src="{{ 'assets/images/resource/blog-image-14.jpg'|theme }}" alt=""></figure>
+                                                <div class="date"><span>27.11.2019</span></div>
+                                                <div class="hover-box">
+                                                    <div class="more-link"><a href="blog-single.html">Read More</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="lower-box">
+                                                <div class="upper-info">
+                                                    <h4><a href="blog-single.html">Mayor announces london living wage
+                                                        £10.75 per hour</a></h4>
+                                                    <div class="cat-info"><a href="#"><span class="fa fa-folder"></span>Community Life</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="bg-layer">
+                            <div class="image-layer" style="background-image:url({{ 'assets/images/background/sidebar-bg-image.jpg'|theme }});"></div>
+                        </div>
+
+                        <div class="sidebar-widget services-widget">
+                            <div class="widget-content">
+                                <ul class="links clearfix">
+                                    <li><a href="#"> <span class="ttl">{{ 'News'|_ }}</span></a></li>
+                                    <li><a href="#"> <span class="ttl">{{ 'Articles'|_ }}</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {% partial 'subscribe_us' %}
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:5:"mtime";i:1596911922;s:6:"markup";s:5850:"<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+
+    <!--Search Popup-->
+    {% partial 'search_popup' %}
+
+    <!--Page Title-->
+
+    <section class="blog-banner">
+        <div class="image-layer" style="background-image:url({{ 'assets/images/background/banner-image-6.jpg'|theme }});"></div>
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>{{ post.title }}</h1>
+                    <div class="other-info clearfix">
+                        <div class="date"><span>{{ post.published_at|date('d')}}.{{ post.published_at|date('m')}}.{{ post.published_at|date('Y')}}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-inner">
+                        <div class="single-post">
+                            <div class="post-details">
+                                <!--<div class="main-image-box">
+                                    <figure class="image"><img src="{{ 'assets/images/resource/blog-image-20.jpg'|theme }}" alt=""></figure>
+                                </div>
+                                -->
+                                <p>{{ post.content_html|raw}}</p>
+                            </div>
+
+                            <div class="post-controls">
+                                <div class="inner clearfix">
+                                    <div class="prev-post">
+                                        <a href="#">
+                                            <span class="icon flaticon-back"></span>
+                                            <span class="txt">Digital Payments Promotion <br>Awareness Program</span>
+                                        </a>
+                                    </div>
+                                    <div class="next-post">
+                                        <a href="#">
+                                            <span class="icon flaticon-next"></span>
+                                            <span class="txt">World Environment Solid Waste <br>Lecture Series</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="related-posts">
+                                <div class="group-title">
+                                    <h2>Related Post</h2>
+                                </div>
+                                <div class="row clearfix">
+                                    <!--News Block-->
+
+                                    <div class="news-block-five col-md-6 col-sm-12">
+                                        <div class="inner-box">
+                                            <div class="image-box">
+                                                <figure class="image"><img src="{{ 'assets/images/resource/blog-image-14.jpg'|theme }}" alt=""></figure>
+                                                <div class="date"><span>27.11.2019</span></div>
+                                                <div class="hover-box">
+                                                    <div class="more-link"><a href="blog-single.html">Read More</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="lower-box">
+                                                <div class="upper-info">
+                                                    <h4><a href="blog-single.html">Mayor announces london living wage
+                                                        £10.75 per hour</a></h4>
+                                                    <div class="cat-info"><a href="#"><span class="fa fa-folder"></span>Community Life</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="bg-layer">
+                            <div class="image-layer" style="background-image:url({{ 'assets/images/background/sidebar-bg-image.jpg'|theme }});"></div>
+                        </div>
+
+                        <div class="sidebar-widget services-widget">
+                            <div class="widget-content">
+                                <ul class="links clearfix">
+                                    <li><a href="#"> <span class="ttl">{{ 'News'|_ }}</span></a></li>
+                                    <li><a href="#"> <span class="ttl">{{ 'Articles'|_ }}</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {% partial 'subscribe_us' %}
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-up-arrow-angle"></span></div>";s:4:"code";N;s:5:"title";s:9:"Blog post";s:3:"url";s:6:"/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"is_active";s:4:"blog";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:9:"blog/blog";}}}
